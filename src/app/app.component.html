@@ -5,6 +5,17 @@
 <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<h1>{{title}}</h1>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+
+
+
+<div class="container rounded border border-light">
+  <ul>
+    <li *ngFor="let photo of something"><img src="{{photo['url']}}"></li>
+  </ul>
+
+</div>
+
+
+
 <router-outlet></router-outlet>
