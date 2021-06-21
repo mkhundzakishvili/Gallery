@@ -18,10 +18,15 @@ export class AppComponent implements OnInit{
   getPhotos(): void{
     this.galleryService.getPhotos()
       .subscribe((data) => {
-
-        //this.title = JSON.stringify(data);
+        this.something = data;
+        console.log(this.something);
       })
   }
 
-  title = 'MK';
+  title = "gallery";
+
+  something = [];
+
+
+
 }
