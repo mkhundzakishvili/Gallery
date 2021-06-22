@@ -18,6 +18,8 @@ export class GalleryService {
     });
   }
 
-
+  deletePhoto(id:number) {
+    return this.http.delete<void>(`http://localhost:3000/photos/${id}`);
+   }
 
 }

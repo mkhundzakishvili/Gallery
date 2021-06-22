@@ -1,4 +1,3 @@
-
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -9,11 +8,12 @@
 
 
 
-<div class="container rounded border border-light">
-  <ul>
-    <li *ngFor="let photo of something"><img src="{{photo['url']}}"></li>
-  </ul>
+<div class="container rounded border border-light frame">
+  <div *ngFor="let photo of something">
 
+      <img src="{{photo.url}}"/>
+      <button type="button" class="btn btn-dark" (click)="deletePhoto(photo.id)">Delete</button>
+  </div>
 </div>
 
 

@@ -23,10 +23,15 @@ export class AppComponent implements OnInit{
       })
   }
 
+  deletePhoto(id:number): void{
+    this.galleryService.deletePhoto(id)
+      .subscribe(() => {
+      console.log("deleted");
+    })
+  }
+
   title = "gallery";
 
-  something = [];
-
-
+  something:{id:number, url:string}[] = [];
 
 }
