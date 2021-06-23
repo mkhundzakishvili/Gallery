@@ -27,6 +27,7 @@ export class AppComponent implements OnInit{
     this.galleryService.deletePhoto(id)
       .subscribe(() => {
       console.log("deleted");
+      this.getPhotos();
     })
   }
 
