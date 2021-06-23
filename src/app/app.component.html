@@ -9,10 +9,14 @@
 
 
 <div class="container rounded border border-light frame">
-  <div *ngFor="let photo of something">
+  <div *ngFor="let image of images" class="items">
+    <ul>
+      <div class="item">
+        <li><img src="{{image.url}}"/></li>
+        <li><button type="button" class="btn btn-dark" (click)="deletePhoto(image.id)">Delete</button></li>
+      </div>
 
-      <img src="{{photo.url}}"/>
-      <button type="button" class="btn btn-dark" (click)="deletePhoto(photo.id)">Delete</button>
+    </ul>
   </div>
 </div>
 

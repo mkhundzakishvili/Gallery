@@ -18,8 +18,8 @@ export class AppComponent implements OnInit{
   getPhotos(): void{
     this.galleryService.getPhotos()
       .subscribe((data) => {
-        this.something = data;
-        console.log(this.something);
+        this.images = data;
+        console.log(this.images);
       })
   }
 
@@ -32,6 +32,6 @@ export class AppComponent implements OnInit{
 
   title = "gallery";
 
-  something:{id:number, url:string}[] = [];
+  images:{id:number, url:string}[] = [];
 
 }

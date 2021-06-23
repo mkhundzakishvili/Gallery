@@ -1,3 +1,20 @@
 .frame {
   display: flex;
 }
+ul > div > li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+ul{
+  text-align: center;
+}
+
+.item {
+  border: 1px solid #efefef;
+  border-radius: 7px;
+}
+
+.items {
+  margin: 10px;
+}
